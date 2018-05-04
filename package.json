@@ -6,7 +6,7 @@
   "main": "run-server.js",
   "scripts": {
     "start": "node run-server.js",
-    "dev": "nodemon",
+    "dev": "export NODE_ENV=development; export DEBUG=*; nodemon run-server.js",
     "test": "NODE_ENV=test mocha"
   },
   "repository": {
